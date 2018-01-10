@@ -22,3 +22,6 @@ npm-debug.log
 
 #generated folders
 ./cache/
+
+#generated documentation directories
+**/src/main/resources/public/**
