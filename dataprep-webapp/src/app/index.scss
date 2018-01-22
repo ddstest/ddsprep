@@ -12,8 +12,13 @@
   ============================================================================*/
 
 // Bootstrap
+$brand-primary: #00a1b3;
 $navbar-margin-bottom: 0;
 @import "~@talend/bootstrap-theme/src/theme/theme";
+
+$brand-primary-t7: $brand-primary;
+$brand-secondary-t7: #168aa6;
+@import "~@talend/react-components/lib/Layout/_Layout.tdp.scss";
 
 // Sunchoke
 @import "~sunchoke/src/css/common/colors";

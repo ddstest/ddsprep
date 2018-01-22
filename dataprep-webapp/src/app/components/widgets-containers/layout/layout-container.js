@@ -13,21 +13,21 @@
 const LayoutContainer = {
 	transclude: true,
 	template: `
-		<div class="app">
-			<div class="header">
+		<div class="app t7">
+			<header role="banner" class="header" >
 				<app-header-bar search-toggle="$ctrl.state.search.searchToggle"
 		 						searching="$ctrl.state.search.searching"
 		 						search-input="$ctrl.state.search.searchInput"
 		 						search-results="$ctrl.state.search.searchResults"
 		 						search-focused-section-index="$ctrl.state.search.focusedSectionIndex"
 		 						search-focused-item-index="$ctrl.state.search.focusedItemIndex" />
-			</div>
-			<div class="content">
+			</header>
+			<main role="main" class="content">
 				<div class="sidemenu">
 					<side-panel id="'side-panel'" active="$ctrl.$state.current.name"><side-panel/>
 				</div>
 				<ng-transclude class="main"></ng-transclude>
-			</div>
+			</main>
 		</div>
 	`,
 	controller($state, state) {

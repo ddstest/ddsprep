@@ -28,16 +28,19 @@ $tc-layout-main-min-width: 1000px;
 		display: flex;
 		flex-direction: row;
 
-		.main {
-			flex-grow: 1;
-			height: calc(100vh - #{$tc-layout-header-height});
-		}
-
 		.sidemenu {
 			flex-grow: 0;
 			flex-shrink: 0;
-
 			background-color: $blue;
+		}
+
+		.sidemenu,
+		.main {
+			height: calc(100vh - #{$tc-layout-header-height});
+		}
+
+		.main {
+			flex-grow: 1;
 		}
 	}
 
