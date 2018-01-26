@@ -13,7 +13,7 @@
 const LayoutContainer = {
 	transclude: true,
 	template: `
-		<div class="app t7">
+		<div class="app">
 			<header role="banner" class="header" >
 				<app-header-bar search-toggle="$ctrl.state.search.searchToggle"
 		 						searching="$ctrl.state.search.searching"

@@ -598,6 +598,7 @@ const settingsMock = {
 		fuzzyUrl: 'HELP_FUZZY_URL',
 		exactUrl: 'HELP_EXACT_URL',
 	},
+	context: {},
 };
 
 export default settingsMock;

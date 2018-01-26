@@ -88,6 +88,7 @@ function getDefaultConfig(options) {
 				react: path.join(__dirname, '../node_modules/react'),
 				i18next: path.join(__dirname, '../node_modules/i18next'),
 			},
+			symlinks: false,
 		},
 		plugins: [
 			extractCSS,
