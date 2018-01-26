@@ -35,13 +35,21 @@ $tc-layout-main-min-width: 1000px;
 		}
 
 		.sidemenu,
-		.main {
+		.main,
+		.content-loader {
 			height: calc(100vh - #{$tc-layout-header-height});
 		}
 
-		.main {
+		.main,
+		.content-loader {
 			flex-grow: 1;
 		}
-	}
 
+		.content-loader {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+		}	
+	}
 }
