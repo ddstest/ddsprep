@@ -20,8 +20,6 @@ import static org.springframework.test.util.ReflectionTestUtils.setField;
 @RunWith(MockitoJUnitRunner.class)
 public class UiPropertiesServiceTest {
 
-    private static final String DATASET_UI_THEME = "dataprep.ui.theme.enabled";
-
     private static final String DATASET_UI_CONFIGURATION_REMOTE_ENABLED = "dataprep.ui.configuration.remote.enabled";
 
     @InjectMocks

@@ -33,7 +33,6 @@ import static java.util.stream.Collectors.toList;
 import static org.hamcrest.Matchers.contains;
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.*;
-import static org.springframework.test.util.ReflectionTestUtils.setField;
 import static org.talend.dataprep.api.service.settings.actions.api.ActionSettings.PAYLOAD_ARGS_KEY;
 import static org.talend.dataprep.api.service.settings.actions.api.ActionSettings.PAYLOAD_METHOD_KEY;
 
@@ -539,26 +538,13 @@ public class AppSettingsAPITest extends ApiServiceTestBase {
     }
 
     @Test
-    public void shouldNotEnableThemeContextSettings() {
+    public void shouldNotEnableThemeByDefaultInContextSettings() {
         // when
-        setField(context.getBean("uiService"), "theme", Boolean.FALSE);
         final AppSettings settings = when().get("/api/settings/").as(AppSettings.class);
 
         // then
         final boolean theme = (boolean) settings.getContext().get("theme");
 
         assertThat(theme, is(Boolean.FALSE));
-    }
-
-    @Test
-    public void shouldEnableThemeContextSettings() {
-        // when
-        setField(context.getBean("uiService"), "theme", Boolean.TRUE);
-        final AppSettings settings = when().get("/api/settings/").as(AppSettings.class);
-
-        // then
-        final boolean theme = (boolean) settings.getContext().get("theme");
-
-        assertThat(theme, is(Boolean.TRUE));
     }
 }
