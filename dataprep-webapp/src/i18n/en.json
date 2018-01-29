@@ -158,7 +158,6 @@
   "_comment": "Add datasets",
   "IMPORT_DATASET": "Add dataset",
   "COLLECTING_DATA": "Collecting {{datasetName}} data. Please wait…",
-  "IMPORT_WAIT": "Fetching import parameters, please wait…",
   "DATASET_NAME": "Dataset name:",
   "PREPARATION": "Preparation",
   "DATASTORE_TEST_CONNECTION": "Test connection",
@@ -270,6 +269,7 @@
   "ACTIONS_TAB_ROW": "Row",
   "ACTIONS_TAB_COLUMN": "Column",
   "ACTIONS_TAB_TABLE": "Table",
+  "NO_ACTION_AVAILABLE": "No action available",
 
   "_comment": "Recipe",
   "FILTERS_APPLIED": "Filters applied",
@@ -321,7 +321,6 @@
   "UNKNOWN": "unknown",
   "SELECT_COLUMN_TO_DISPLAY_STATS": "Select a column to display its statistics",
   "SELECT_PATTERN_IS": "The selected pattern is:",
-  "REFRESHING_WAIT": "refreshing, please wait…",
   "TOOLTIP_MATCHING_FILTER": "matching your filter",
   "TOOLTIP_MATCHING_FULL": "in entire dataset",
   "NO_CHART": "No chart for the current selection",
